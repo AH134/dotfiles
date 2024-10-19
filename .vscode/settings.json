@@ -1,0 +1,181 @@
+{
+    // ---------- DEFAULT SETTINGS ----------
+    "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
+    // ----- WINDOW SETTINGS -----
+    "window.zoomLevel": 1,
+    "window.commandCenter": false,
+    "workbench.layoutControl.enabled": true,
+    "workbench.colorTheme": "Catppuccin Mocha",
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "welcomePage",
+    "workbench.activityBar.location": "side",
+    // ----- EDITOR SETTINGS -----
+    "breadcrumbs.enabled": false,
+    "editor.fontFamily": "JetBrainsMono Nerd Font",
+    "editor.fontSize": 16,
+    "editor.wordWrap": "on",
+    "editor.lineHeight": 1.3,
+    "editor.formatOnSave": true,
+    "editor.lineNumbers": "on",
+    "editor.minimap.enabled": false,
+    "editor.cursorSurroundingLines": 8,
+    "editor.stickyScroll.enabled": false,
+    "editor.scrollbar.vertical": "auto",
+    // ----- CATPPUCCIN THEME SETTINGS -----
+    // we try to make semantic highlighting look good
+    "editor.semanticHighlighting.enabled": true,
+    // prevent VSCode from modifying the terminal colors
+    "terminal.integrated.minimumContrastRatio": 1,
+    // make the window's titlebar use the workbench colors
+    "window.titleBarStyle": "custom",
+    "catppuccin.italicKeywords": false,
+    "catppuccin.italicComments": false,
+    "catppuccin.boldKeywords": false,
+    // ----- VIM SETTINGS -----
+    "vim.easymotion": true,
+    "vim.incsearch": true,
+    "vim.useSystemClipboard": true,
+    "vim.useCtrlKeys": true,
+    "vim.hlsearch": true,
+    "vim.leader": "<Space>",
+    "vim.highlightedyank.enable": true,
+    "vim.highlightedyank.color": "rgba(203, 166, 247, 0.7)",
+    "vim.highlightedyank.duration": 250,
+    "vim.handleKeys": {
+        "<C-a>": false,
+        "<C-f>": false,
+        "<C-p>": false
+    },
+    "vim.smartRelativeLine": true,
+    "vim.normalModeKeyBindingsNonRecursive": [
+        // switch b/w buffers
+        {
+            "before": [
+                "<Tab>"
+            ],
+            "commands": [
+                ":bnext"
+            ]
+        },
+        {
+            "before": [
+                "<S-Tab>"
+            ],
+            "commands": [
+                ":bprevious"
+            ]
+        },
+        // LSP keybindings
+        // peek Definition
+        {
+            "before": [
+                "g",
+                "p",
+                "d"
+            ],
+            "commands": [
+                "editor.action.peekDefinition"
+            ]
+        },
+        // show definition
+        {
+            "before": [
+                "g",
+                "h"
+            ],
+            "commands": [
+                "editor.action.showDefinitionPreviewHover"
+            ]
+        },
+        // go to implementation
+        {
+            "before": [
+                "g",
+                "i"
+            ],
+            "commands": [
+                "editor.action.goToImplementation"
+            ]
+        },
+        // peek implementation
+        {
+            "before": [
+                "g",
+                "p",
+                "i"
+            ],
+            "commands": [
+                "editor.action.peekImplementation"
+            ]
+        },
+        // quick fix
+        {
+            "before": [
+                "g",
+                "q"
+            ],
+            "commands": [
+                "editor.action.quickFix"
+            ]
+        },
+        // go to reference 
+        {
+            "before": [
+                "g",
+                "r"
+            ],
+            "commands": [
+                "editor.action.referenceSearch.trigger"
+            ]
+        },
+        // go to type definition
+        {
+            "before": [
+                "g",
+                "t"
+            ],
+            "commands": [
+                "editor.action.goToTypeDefinition"
+            ]
+        },
+        // peek type definition
+        {
+            "before": [
+                "g",
+                "p",
+                "t"
+            ],
+            "commands": [
+                "editor.action.peekTypeDefinition"
+            ]
+        },
+        // File explorer keybindings
+        {
+            "before": [
+                "<leader>",
+                "e"
+            ],
+            "commands": [
+                "workbench.view.explorer"
+            ]
+        }
+    ],
+    // Improve Performance
+    "extensions.experimental.affinity": {
+        "vscodevim.name": 1
+    },
+    // ----- BACKGROUND SETTINGS -----
+    // uninstall if you don't want background
+    "background.windowBackgrounds": [
+        "https://raw.githubusercontent.com/AH134/vscode-config/master/assets/backgrounds/islet_artwork.jpg"
+    ],
+    "background.backgroundOpacity": [
+        0.95,
+        0.9,
+        0.9,
+        0.9
+    ],
+    "background.autoInstall": false,
+    // ---------- DEFAULT SETTINGS ----------
+}
