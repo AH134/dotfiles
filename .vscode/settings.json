@@ -1,15 +1,34 @@
 {
     "editor.fontFamily": "JetBrainsMono Nerd Font",
     "telemetry.telemetryLevel": "off",
+    "gitlens.telemetry.enabled": false,
     "window.zoomLevel": 1,
     "editor.fontSize": 16,
     "editor.formatOnSave": true,
     "editor.stickyScroll.enabled": false,
     "editor.cursorSurroundingLines": 8,
-    "workbench.colorTheme": "Catppuccin Macchiato",
+    "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
     "gopls": {
         "ui.semanticTokens": true
+    },
+    // tailwind settings
+    "files.associations": {
+        "*.css": "tailwindcss"
+    },
+    "editor.quickSuggestions": {
+        "strings": "on"
+    },
+    "background.fullscreen": {
+        // Local images can be dragged into the browser to quickly get the file protocol address from the address bar
+        "images": [
+            "file:///C:/Users/bob/Pictures/1.png"
+        ],
+        "opacity": 0.05,
+        "size": "cover",
+        "position": "center",
+        "interval": 0,
+        "random": false
     },
     // ----- VIM SETTINGS -----
     "vim.leader": "<Space>",
@@ -150,5 +169,5 @@
                 "editor.action.peekTypeDefinition"
             ]
         }
-    ]
+    ],
 }
