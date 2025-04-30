@@ -9,18 +9,11 @@
                 "action": "copy",
                 "singleLine": false
             },
-            "id": "User.copy.644BA8F2",
-            "keys": "ctrl+c"
+            "id": "User.copy.644BA8F2"
         },
         {
             "command": "paste",
-            "id": "User.paste",
-            "keys": "ctrl+v"
-        },
-        {
-            "command": "find",
-            "id": "User.find",
-            "keys": "ctrl+shift+f"
+            "id": "User.paste"
         },
         {
             "command": 
@@ -29,8 +22,11 @@
                 "split": "auto",
                 "splitMode": "duplicate"
             },
-            "id": "User.splitPane.A6751878",
-            "keys": "alt+shift+d"
+            "id": "User.splitPane.A6751878"
+        },
+        {
+            "command": "find",
+            "id": "User.find"
         }
     ],
     "copyFormatting": "none",
@@ -46,8 +42,9 @@
     {
         "defaults": 
         {
-            "backgroundImage": "C:\\Users\\bob\\Pictures\\1.png",
+            "backgroundImage": "C:\\Users\\bob\\Pictures\\2.png",
             "backgroundImageOpacity": 0.1,
+            "bellStyle": "none",
             "colorScheme": "Catppuccin Mocha",
             "cursorShape": "filledBox",
             "experimental.rightClickContextMenu": true,
@@ -86,16 +83,17 @@
                 "source": "CanonicalGroupLimited.Ubuntu_79rhkp1fndgsc"
             },
             {
-                "guid": "{2c4de342-38b7-51cf-b940-2309a097f518}",
-                "hidden": true,
-                "name": "Ubuntu",
-                "source": "Windows.Terminal.Wsl"
-            },
-            {
+                "adjustIndistinguishableColors": "indexed",
                 "guid": "{574e775e-4f2a-5b96-ac1e-a2962a402336}",
                 "hidden": false,
                 "name": "PowerShell",
                 "source": "Windows.Terminal.PowershellCore"
+            },
+            {
+                "guid": "{2ece5bfe-50ed-5f3a-ab87-5cd4baafed2b}",
+                "hidden": false,
+                "name": "Git Bash",
+                "source": "Git"
             }
         ]
     },

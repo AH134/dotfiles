@@ -4,14 +4,15 @@
     "gitlens.telemetry.enabled": false,
     "window.zoomLevel": 1,
     "editor.fontSize": 16,
-    "editor.formatOnSave": true,
     "editor.stickyScroll.enabled": false,
     "editor.cursorSurroundingLines": 8,
+    "editor.wordWrap": "on",
     "workbench.colorTheme": "Catppuccin Mocha",
     "workbench.iconTheme": "material-icon-theme",
     "gopls": {
         "ui.semanticTokens": true
     },
+    "svelte.enable-ts-plugin": true,
     // tailwind settings
     "files.associations": {
         "*.css": "tailwindcss"
@@ -22,7 +23,7 @@
     "background.fullscreen": {
         // Local images can be dragged into the browser to quickly get the file protocol address from the address bar
         "images": [
-            "file:///C:/Users/bob/Pictures/1.png"
+            "file:///C:/Users/NAME/IMAGE"
         ],
         "opacity": 0.05,
         "size": "cover",
@@ -170,4 +171,53 @@
             ]
         }
     ],
+    "editor.minimap.enabled": false,
+    "explorer.fileNesting.patterns": {
+        "*.ts": "${capture}.js",
+        "*.js": "${capture}.js.map, ${capture}.min.js, ${capture}.d.ts",
+        "*.jsx": "${capture}.js",
+        "*.tsx": "${capture}.ts",
+        "tsconfig.json": "tsconfig.*.json",
+        "package.json": "package-lock.json, yarn.lock, pnpm-lock.yaml, bun.lockb",
+        "*.sqlite": "${capture}.${extname}-*",
+        "*.db": "${capture}.${extname}-*",
+        "*.sqlite3": "${capture}.${extname}-*",
+        "*.db3": "${capture}.${extname}-*",
+        "*.sdb": "${capture}.${extname}-*",
+        "*.s3db": "${capture}.${extname}-*"
+    },
+    "[svelte]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.documentSelectors": [
+        "**/*.svelte"
+    ],
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 2,
+        "editor.autoIndent": "advanced",
+        "diffEditor.ignoreTrimWhitespace": false,
+        "editor.defaultColorDecorators": "auto",
+        "editor.defaultFormatter": "redhat.vscode-yaml"
+    },
+    "editor.formatOnSave": true,
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        "svelte",
+        "typescript"
+    ],
+    "errorLens.enabledDiagnosticLevels": [
+        "error",
+        "warning",
+        "info",
+        "hint"
+    ],
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "prettier.tabWidth": 4
 }
