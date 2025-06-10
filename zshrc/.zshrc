@@ -1,3 +1,4 @@
+# Note: bob is the name I use for my PC
 # Add deno completions to search path
 if [[ ":$FPATH:" != *":/home/bob/.zsh/completions:"* ]]; then export FPATH="/home/bob/.zsh/completions:$FPATH"; fi
 # Lines configured by zsh-newuser-install
