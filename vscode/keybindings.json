@@ -1,5 +1,23 @@
 // Place your key bindings in this file to override the defaults
 [
+    // move up in quick select (command center)
+    {
+        "key": "ctrl+j",
+        "command": "workbench.action.quickOpenSelectNext",
+        "when": "inQuickOpen"
+    },
+    // move down in quick select (command center)
+    {
+        "key": "ctrl+k",
+        "command": "workbench.action.quickOpenSelectPrevious",
+        "when": "inQuickOpen"
+    },
+    // move down is suggestions
+    {
+        "key": "ctrl+k",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus || suggestWidgetVisible && textInputFocus && !suggestWidgetHasFocusedSuggestion"
+    },
     // ----- SCROLL IN SHOW HOVER KEYBINDS -----
     {
         "key": "h",
@@ -25,6 +43,11 @@
     {
         "key": "space e",
         "command": "workbench.action.toggleSidebarVisibility",
+        "when": "filesExplorerFocus && !inputFocus"
+    },
+    {
+        "key": "space r",
+        "command": "workbench.action.focusActiveEditorGroup",
         "when": "filesExplorerFocus && !inputFocus"
     },
     {
@@ -60,7 +83,7 @@
     // ----- TERMINAL KEYBINDS -----
     {
         "key": "ctrl+u",
-        "command": "workbench.action.terminal.toggleTerminal",
+        "command": "workbench.action.terminal.toggleTerminal"
     },
     {
         "key": "ctrl+a",
@@ -76,5 +99,5 @@
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
-    },
+    }
 ]
