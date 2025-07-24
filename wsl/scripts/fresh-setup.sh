@@ -43,6 +43,7 @@ readonly APT_PACKAGES=(
     "build-essential" 
     "curl"
     "git"
+    "unzip"
 )
 
 readonly HOMEBREW_PACKAGES=(
