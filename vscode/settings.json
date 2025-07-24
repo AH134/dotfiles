@@ -14,7 +14,6 @@
     "workbench.iconTheme": "material-icon-theme",
     "workbench.layoutControl.enabled": false,
     "workbench.navigationControl.enabled": false,
-
     // ----- VIM SETTINGS ----- //
     "vim.leader": "<Space>",
     "vim.smartRelativeLine": true,
@@ -22,6 +21,17 @@
     "vim.highlightedyank.enable": true,
     "vim.highlightedyank.color": "rgba(203, 166, 247, 0.7)",
     "vim.highlightedyank.duration": 250,
+    "vim.handleKeys": {
+        "<C-d>": true,
+        "<C-s>": false,
+        "<C-z>": false,
+        "<C-c>": false,
+        "<C-v>": false,
+        "<C-x>": false,
+        "<C-i>": false,
+        "<C-a>": false,
+        "<C-backspace>": false
+    },
     "vim.normalModeKeyBindings": [
         {
             "before": [
@@ -161,7 +171,6 @@
         "info",
         "hint"
     ],
-
     // ----- COPILOT SETTINGS ----- //
     "github.copilot.enable": {
         "*": false,
