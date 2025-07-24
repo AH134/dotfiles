@@ -19,5 +19,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Changed
 - Refactored whole dotfiles repo, no yappers
 
-[1.0.1]: https://github.com/AH134/dotfiles/comppare/v1.0.0...v1.0.1
+[1.0.1]: https://github.com/AH134/dotfiles/compare/v1.0.0...v1.0.1
 [1.0.0]: https://github.com/AH134/dotfiles/releases/tag/v1.0.0
